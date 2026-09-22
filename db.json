@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "recruiter"
+    },
+    {
+      "id": "2",
+      "name": "Swapnika",
+      "email": "swapnika@gmail.com",
+      "password": "1234",
+      "role": "candidate"
+    },
+    {
+      "name": "Swapnika",
+      "email": "jakkaswapnikakrishna@gmail.com",
+      "password": "swapnika_26",
+      "role": "candidate",
+      "id": "Q4QD8C-n9R0"
+    },
+    {
+      "name": "Krishna",
+      "email": "krishna@gmail.com",
+      "password": "Krishna@26",
+      "role": "recruiter",
+      "id": "jg2s69oInDI"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Backend Developer",
+      "company": "Wipro",
+      "location": "Hyderabad",
+      "salary": "8 LPA",
+      "experience": "2-3 years",
+      "skills": "Node js,Express js",
+      "description": "Good at backend work",
+      "postedDate": "2026-09-20"
+    },
+    {
+      "id": "2",
+      "title": "Frontend Developer",
+      "company": "Infosys",
+      "location": "Bangalore",
+      "salary": "7 LPA",
+      "experience": "0-2 years",
+      "skills": "HTML, CSS, JavaScript",
+      "description": "Build responsive web applications.",
+      "postedDate": "2026-09-20"
+    }
+  ],
+  "applications": [
+    {
+      "jobId": "1",
+      "userId": "Q4QD8C-n9R0",
+      "resume": "resume.pdf",
+      "status": "Selected",
+      "appliedDate": "2026-09-21",
+      "id": "n8kCwbnTSG4"
+    },
+    {
+      "jobId": "1",
+      "userId": "Q4QD8C-n9R0",
+      "resume": "resume.pdf",
+      "status": "Applied",
+      "appliedDate": "2026-09-21",
+      "id": "f7N4gSSo5e0"
+    },
+    {
+      "jobId": "1",
+      "userId": "Q4QD8C-n9R0",
+      "resume": "resume.pdf",
+      "status": "Applied",
+      "appliedDate": "2026-09-22",
+      "id": "NMhTLQV8FLc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

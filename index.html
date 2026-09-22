@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobHub - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="auth-box">
+    <h1>JobHub</h1>
+  <!-- LOGIN -->
+<h2>Login</h2>
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+<select id="loginRole">
+    <option value="candidate">Candidate</option>
+    <option value="recruiter">Recruiter</option>
+</select>
+<button onclick="login()">Login</button>
+<p id="loginMessage"></p>
+    <!-- REGISTER -->
+    <h2>Create Account</h2>
+    <input type="text" id="registerName" placeholder="Name">
+    <input type="email" id="registerEmail" placeholder="Email">
+    <input type="password" id="registerPassword" placeholder="Password">
+    <select id="registerRole">
+        <option value="candidate">Candidate</option>
+        <option value="recruiter">Recruiter </option>
+    </select>
+    <button onclick="register()">Register</button>
+    <p id="registerMessage"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

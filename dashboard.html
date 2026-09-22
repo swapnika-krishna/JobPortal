@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobHub Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<nav>
+    <h2>JobHub</h2>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="applications.html">Applications</a>
+        <a href="index.html" onclick="logout()">Logout</a>
+    </div>
+</nav>
+<div class="container">
+    <h1 id="welcome"></h1>
+    <!-- ================= CANDIDATE ================= -->
+    <div id="candidateSection">
+        <h2>Find Jobs</h2>
+        <input type="text" id="search" placeholder="Search job title or company" onkeyup="loadJobs()">
+        <select id="locationFilter" onchange="loadJobs()">
+            <option value="">All Locations</option>
+            <option value="Hyderabad"> Hyderabad</option>
+            <option value="Bangalore"> Bangalore</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+        <div id="jobList"></div>
+    </div>
+    <!-- ================= RECRUITER ================= -->
+    <div id="recruiterSection">
+        <h2>Create Job</h2>
+        <form id="jobForm">
+            <input type="text" id="jobTitle" placeholder="Job Title" required>
+            <input type="text" id="company" placeholder="Company"  required>
+            <input  type="text" id="jobLocation" placeholder="Location" required>
+            <input type="text"  id="salary" placeholder="Salary" required>
+            <input type="text" id="experience" placeholder="Experience" required>
+            <input type="text" id="skills" placeholder="Skills" required>
+            <textarea id="description" placeholder="Job Description"  required></textarea>
+            <button type="submit"> Add Job</button>
+        </form>
+        <h2>Manage Jobs</h2>
+        <div id="recruiterJobs"></div>
+        <h2>Applications</h2>
+        <div id="recruiterApplications"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
