@@ -77,6 +77,14 @@
       "status": "Applied",
       "appliedDate": "2026-09-22",
       "id": "NMhTLQV8FLc"
+    },
+    {
+      "jobId": "1",
+      "userId": "Q4QD8C-n9R0",
+      "resume": "resume.pdf",
+      "status": "Applied",
+      "appliedDate": "2026-09-28",
+      "id": "PjcIxGzy3cA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
