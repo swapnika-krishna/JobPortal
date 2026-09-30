@@ -1,4 +1,4 @@
-const API = "http://localhost:3000";
+const API = "https://jobportal-backend-bjte.onrender.com";
 // LOGIN
 async function login() {
     const email =
