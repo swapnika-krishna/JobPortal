@@ -13,10 +13,6 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background: #f4f7fb;
 }
 
@@ -43,13 +39,14 @@ nav a {
 
 
 /* ================================
-   LOGIN / REGISTER BOX
+   LOGIN / REGISTER
 ================================ */
 
 .auth-box {
-    width: 90%;
-    max-width: 400px;
+    width: 400px;
+    max-width: 90%;
 
+    margin: 40px auto;
     padding: 30px;
 
     background: white;
@@ -83,7 +80,7 @@ textarea {
 
 
 /* ================================
-   BUTTONS
+   BUTTON
 ================================ */
 
 button {
@@ -110,7 +107,6 @@ button:hover {
 .container {
     width: 90%;
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -121,12 +117,10 @@ button:hover {
 
 .job-card {
     background: white;
-
     padding: 20px;
     margin: 20px 0;
 
     border-radius: 10px;
-
     box-shadow: 0 3px 10px #ddd;
 }
 
@@ -141,7 +135,7 @@ button:hover {
 
 
 /* ================================
-   EDIT / DELETE BUTTONS
+   EDIT / DELETE
 ================================ */
 
 .delete {
@@ -164,7 +158,7 @@ button:hover {
 
 
 /* ================================
-   APPLICATION CARD
+   APPLICATION
 ================================ */
 
 .application-card {
@@ -178,31 +172,34 @@ button:hover {
 
 
 /* ================================
-   MOBILE RESPONSIVE
+   MOBILE
 ================================ */
 
 @media (max-width: 600px) {
 
     body {
-        padding: 15px;
+        min-height: 100dvh;
+        padding: 0;
     }
 
     .auth-box {
-        width: 100%;
+        width: calc(100% - 30px);
         max-width: 400px;
 
-        padding: 22px;
+        margin: 20px auto;
+        padding: 20px;
     }
 
     .auth-box h1 {
-        font-size: 26px;
-        margin-bottom: 20px;
+        font-size: 25px;
+        margin-bottom: 18px;
     }
 
     input,
     select,
     textarea {
         padding: 10px;
+        margin: 6px 0 12px;
     }
 
     button {
@@ -216,12 +213,16 @@ button:hover {
     }
 
     nav a {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 8px;
+    }
+
+    .container {
+        width: 94%;
     }
 
     .job-card {
         padding: 15px;
+        margin: 15px 0;
     }
 
     .application-card {
